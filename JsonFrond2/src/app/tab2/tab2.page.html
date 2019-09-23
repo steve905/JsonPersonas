@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab Two
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card-content *ngFor = 'let per of personas'>
+    <ion-card-header>
+    </ion-card-header>
+    <ion-card-subtitle>
+      <ion-list lines="none">
+        <ion-list-header>
+          <ion-label>PERSONAS</ion-label>
+        </ion-list-header>
+
+        <ion-item href="">
+          <ion-icon slot="start" color="medium" name="book"></ion-icon>
+          <ion-label>id {{per.id}}</ion-label>
+        </ion-item>
+
+        <ion-item href="">
+            <ion-icon slot="start" color="medium" name="book"></ion-icon>
+            <ion-label>Nombre: {{per.nombre}}</ion-label>
+          </ion-item>
+
+        <ion-item href="">
+            <ion-icon slot="start" color="medium" name="book"></ion-icon>
+            <ion-label>Edad: {{per.edad}}</ion-label>
+            </ion-item>
+
+        <ion-item href="">
+            <ion-icon slot="start" color="medium" name="book"></ion-icon>
+            <ion-label>Genero: {{per.genero}}</ion-label>
+        </ion-item>
+
+        <ion-item href="">
+              <ion-icon slot="start" color="medium" name="book"></ion-icon>
+              <ion-label>Email: {{per.email}}</ion-label>
+        </ion-item>
+
+        <ion-item href="">
+              <ion-icon slot="start" color="medium" name="book"></ion-icon>
+              <ion-label>Localidad: {{per.localidad}}</ion-label>
+                  </ion-item>
+
+        <ion-item href="">
+              <ion-icon slot="start" color="medium" name="book"></ion-icon>
+              <ion-label>Telefono: {{per.telefono}}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-subtitle>
+  </ion-card-content>
+</ion-content>
